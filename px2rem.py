@@ -4,11 +4,11 @@ args = sys.argv
 if len(sys.argv) != 3:
     print()
     print('px2rem.py')
-    print('Converts a file with px values (ex: 1px) to rem values (ex: 1rem) based on a specified base font size.')
-    print('Requires two arguments, [file path] and [base font size] to convert.')
+    print('Converts a file with px values (ex: 1px) to rem values (ex: 1rem) based on a specified root font size.')
+    print('Requires two arguments, [file path] and [root font size] to convert.')
     print()
-    print('Example: $python3 px2em.py [file path] [base font size (float || integer)]')
-    print('Clarification: If [base font size] = 16 and line n of [file path] contains the value "16px" -> line n of [file path] converts to contain the value "1.000rem".')
+    print('Example: $python3 px2em.py [file path] [root font size (float || integer)]')
+    print('Clarification: If [root font size] = 16 and line n of [file path] contains the value "16px" -> line n of [file path] converts to contain the value "1.000rem".')
     print()
 else:
     if sys.argv[2].find('px') != -1:
